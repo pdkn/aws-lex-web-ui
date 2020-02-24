@@ -5,6 +5,7 @@
     dark
     fixed
     v-bind:dense="this.$store.state.isRunningEmbedded"
+    role="navigation"
     aria-label="Toolbar with sound FX mute button, minimise chat window button and option chat back a step button"
   >
     <img v-if="toolbarLogo" v-bind:src="toolbarLogo" alt="logo" aria-hidden="true"/>
