@@ -446,7 +446,7 @@ Resources:
                 ConnectContactFlowId: !Ref ConnectContactFlowId
                 ConnectInstanceId: !Ref ConnectInstanceId
                 ConnectApiGatewayEndpoint: !Ref ConnectApiGatewayEndpoint
-
+                Timestamp: 1612313423
 
     CognitoIdentityPoolConfig:
         Type: AWS::CloudFormation::Stack
