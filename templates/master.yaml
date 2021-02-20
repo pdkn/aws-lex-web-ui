@@ -95,6 +95,16 @@ Parameters:
             This is an optional parameter, if set to True, the history of the chat is maintained over sessions. 
             A item to clean the chat will appear at the menu.
 
+    ShouldEnableSFX
+        Type: String
+        Default: false
+        AllowedValues:
+          - true
+          - false
+        Description: >
+          This is an optional parameter, if set to True, the chatbot will play sound effects when a message
+          is sent/recieved ( if corresponding mp3 files are set in config.ui messageSentSFX & messageReceivedSFX )
+          
     ShouldEnableLiveChat:
         Type: String
         Default: false
@@ -335,6 +345,7 @@ Metadata:
                   - ReInitSessionAttributesOnRestart
                   - ShowResponseCardTitle
                   - SaveHistory
+                  - ShouldEnableSFX
                   - EnableLiveChat
                   - retryOnLexPostTextTimeout
                   - retryCountPostTextTimeout
@@ -420,6 +431,7 @@ Resources:
                 WebAppConfHelp: !Ref WebAppConfHelp
                 WebAppConfToolbarTitle: !Ref WebAppConfToolbarTitle
                 SaveHistory: !Ref SaveHistory
+                ShouldEnableSFX: !Ref ShouldEnableSFX
                 ShouldEnableLiveChat: !Ref ShouldEnableLiveChat
                 ShouldEnableCognitoLogin:
                   !If
